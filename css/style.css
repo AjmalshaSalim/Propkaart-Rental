@@ -8,7 +8,9 @@ body {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 ::-moz-selection {
   background: #000;
   color: #fff;
@@ -27,13 +29,219 @@ body {
 }
 .builders-link {
   font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #1E1354;
 }
 
+.image {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust this according to your requirement */
+  background-position: center;
+}
+.text-dec{
+letter-spacing: 0.5px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .card-container2 {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+.cards {
+  flex: 0 1 22%; /* Each card will take roughly 22% of the container width */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+  background-color: #fff;
+  height: 90px;
+  margin-bottom: 20px;
+}
+.cards:hover{
+  scale: 1.1;
+  transition-duration: 300ms;
+}
+/* For tablets */
+@media (max-width: 800px) {
+  .cards {
+    flex: 0 1 31%; /* 3 cards per row */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 500px) {
+  .cards {
+    flex: 0 1 48%; /* 2 cards per row */
+  }
+}
+.cards img {
+  width: 100%; /* Ensure images take up the entire card width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra space below the image */
+}
+
+.end-to-end-assistance {
+  text-align: center;
+  height: 300px;
+}
+.bank-logo-card{
+  height: 200px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.205);
+  border-radius: 3%;
+  width: 60%;
+  margin-left: 15%;
+}
+.bank-logo-image{
+  width: 100% !important;
+}
+.bank-logo-container{
+  height: 100px;
+  margin-top: -30px;
+  overflow: hidden;
+  border-radius: 3%;
+}
+.end-to-end-assistance h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8%;
+}
+
+.icon-content{
+  width: 100px;
+  padding-right:10px;
+  color: #1D1254;
+  padding-top: 20px;
+  font-weight: 400 !important;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.service {
+  margin: 0 15px;
+}
+
+
+
+.icon {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #1d12541a;
+  border-radius: 50%;
+  background-size: cover;
+}
+.icon:hover{
+  background-color: #f07c00e3;
+}
+.search-shortlisting {
+  background-image: url('search_icon.png');
+}
+
+.site-visit {
+  background-image: url('cart_icon.png');
+}
+
+.home-loan-assistance {
+  background-image: url('home_icon.png');
+
+}
+
+.legal-advice {
+  background-image: url('document_icon.png');
+}
+
+.unit-booking {
+  background-image: url('bag_icon.png');
+}
+
+.subtext {
+  color: #999;
+}
+
+.apply-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.graphic img {
+  margin-top: 20px;
+  width: 150px;
+}
+.spec-icons{
+  width: 25px;
+  height: 25px;
+  margin-top: 25px;
+}
+
+.card-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap to your preference */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  min-width: 400px; /* Maximum width of the container */
+}
+.card {
+  width: calc(33.33% - 5px); /* Adjust this for gap */
+  max-width: 350px; /* Adjust this for maximum width of each card */
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.card:hover {
+  scale: 1.2 !important;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Builders{
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
 .builders-link:hover {
   color: #f17901;
   font-weight: 800;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   transition-duration: 500ms;
+}
+.whatsapp-logo {
+  position: fixed;
+  bottom: 12% !important; /* Adjust as needed */
+  right: 0px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+.whatsapp-logo:hover{
+  scale: 1.2 !important;
 }
 #news-slider {
   margin-top: 80px;
@@ -177,9 +385,9 @@ body {
 .SpecialCard {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px !important;
-  margin-right: 10px !important;
+  margin-bottom: 40px;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
   box-shadow: #0000002c 2px 10px 15px 0px !important;
 }
 .choose-card {
@@ -2281,9 +2489,9 @@ outline:none ;
 .padded-multi-line-black,
 .unit-9 span {
   display: inline;
-  background: #000;
+  background: #1D1254;
   -webkit-box-shadow: 10px 0 0 #000, 0px 0 0 #000;
-  box-shadow: 10px 0 0 #000, 0px 0 0 #000;
+  box-shadow: 10px 0 0 #1D1254, 0px 0 0 #1D1254;
 }
 
 .unit-9 {
@@ -2336,7 +2544,7 @@ outline:none ;
   margin-bottom: 0;
 }
 .unit-9 span {
-  background: #000;
+  background: #1D1254;
   display: block;
   color: #fff;
   padding-left: 10px;
