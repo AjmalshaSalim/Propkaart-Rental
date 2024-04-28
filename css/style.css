@@ -1,3 +1,128 @@
+/* -----------------Additional Media Query -----------------*/
+/* Default styles */
+.site-navbar .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Media query for small devices */
+@media (max-width: 991.98px) {
+    .site-navbar .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/* Media query for extra small devices */
+@media (max-width: 767.98px) {
+    .site-navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .site-navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .col-lg-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+        text-align: center !important;
+    }
+
+    .site-navigation.text-right.text-md-right {
+        text-align: center !important;
+    }
+
+    .site-menu-toggle {
+        float: none !important;
+        margin-right: auto !important;
+    }
+
+    .site-menu-toggle .icon-menu {
+        font-size: 24px !important;
+    }
+
+    .site-menu.js-clone-nav.d-none.d-lg-block {
+        display: none !important;
+    }
+
+    .site-mobile-menu {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        background-color: #f8f9fa !important;
+        width: 100% !important;
+    }
+
+    .site-mobile-menu-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .site-mobile-menu-body {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+
+    .site-blocks-cover.overlay .container {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .SearchBoxContainer {
+        width: 100% !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    .SearchBox {
+        width: 100% !important;
+    }
+
+    .SearchButton {
+        width: 100% !important;
+        margin-top: 10px !important;
+    }
+
+    .featured-property-half {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .image {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .text {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .builders-link {
+        text-align: center !important;
+    }
+}
+
+
+/* -----------------Additional Media Query----------------- */
+
 /* Base */
 body {
   line-height: 1.7;
