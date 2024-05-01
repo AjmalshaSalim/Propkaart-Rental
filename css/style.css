@@ -1,128 +1,175 @@
 /* -----------------Additional Media Query -----------------*/
 /* Default styles */
-.site-navbar .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+@media only screen and (max-width: 779px) {
+  
+  .SpecialCard {
+    flex: 0 0 32.33%; /* Each card takes exactly 33.33% of the row width */
+    max-width: 47% !important; /* Prevent any overflow caused by padding/margin */
+    box-sizing: border-box;
+    }
+    .card-fields {
+      color: #000 !important;
+      font-size: xx-small !important;
+      letter-spacing: 0 !important;
+      line-height: 8px !important;
+
+  }
+  .bank-logo-container{
+    height: 100px !important;
+    margin-top: 5px !important ;
+  }
+  .text-black{
+    height: 50px !important;
+    margin-top: 40px !important;
+  }
+  #bank-section{
+    margin-top: 100px !important;
+  }
+ 
+  .bank-logo-card{
+    overflow: hidden !important;
+  }
+  .logo{
+    width: 200px !important;
+  }
+  .mb-4{
+    font-size: xx-large !important;
+  }
+  .site-navbar{
+    margin-top: -30px !important;
+  }
+  .site-mobile-menu{
+    width: 400px !important;
+  }
+  .featured-property-half{
+    display: none !important;
+  }
+  /* .card-title-container {
+    background-color: #F07A00;
+    padding-top: 5px;
+    padding-left: 1px;
+} */
+.unit-9 h2 {
+  padding-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 0;
 }
-
-/* Media query for small devices */
-@media (max-width: 991.98px) {
-    .site-navbar .container {
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-/* Media query for extra small devices */
-@media (max-width: 767.98px) {
-    .site-navbar {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .site-navbar .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .col-lg-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .col-lg-8 {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 15px;
-        text-align: center !important;
-    }
-
-    .site-navigation.text-right.text-md-right {
-        text-align: center !important;
-    }
-
-    .site-menu-toggle {
-        float: none !important;
-        margin-right: auto !important;
-    }
-
-    .site-menu-toggle .icon-menu {
-        font-size: 24px !important;
-    }
-
-    .site-menu.js-clone-nav.d-none.d-lg-block {
-        display: none !important;
-    }
-
-    .site-mobile-menu {
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
-        background-color: #f8f9fa !important;
-        width: 100% !important;
-    }
-
-    .site-mobile-menu-header {
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        padding-right: 15px !important;
-        padding-left: 15px !important;
-    }
-
-    .site-mobile-menu-body {
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
-    }
-
-    .site-blocks-cover.overlay .container {
-        padding-right: 15px !important;
-        padding-left: 15px !important;
-    }
-
-    .SearchBoxContainer {
-        width: 100% !important;
-        margin: 0 auto !important;
-        text-align: center !important;
-    }
-
-    .SearchBox {
-        width: 100% !important;
-    }
-
-    .SearchButton {
-        width: 100% !important;
-        margin-top: 10px !important;
-    }
-
-    .featured-property-half {
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
-    }
-
-    .image {
-        width: 100% !important;
-        margin-bottom: 20px !important;
-    }
-
-    .text {
-        width: 100% !important;
-        text-align: center !important;
-    }
-
-    .builders-link {
-        text-align: center !important;
-    }
 }
 
 
+.unit-9 span {
+  background: #1D1254;
+  display: block;
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
 /* -----------------Additional Media Query----------------- */
+.arrow-buttons{
+height: 20px;
+width: 20px;
+}
+.owl-next, .owl-prev{
+  background-color: #F07A00;
+  outline: none;
+  border: none;
+}
+.owl-next:hover{
+  background-color: #1D1254;
+  outline: none;
+}
+.owl-prev:hover{
+  background-color: #1D1254;
+  outline: none;
+}
+.card-fields{
+ font-weight: 800;
+  color: #000;
+  font-size: small;
+line-height: 14px;
+margin-top: 10px;
+padding-left: 15px;
+}
+.card-rows{
+  width:100%;
+   height: 30%;
+}
+.card-title-container{
+  background-color: #F07A00;
+  padding-top: 5px;
+  padding-left: 1px;
+}
+.card-title-font{
+  font-size: x-large;
+  line-height: 15px;
+  color: #fff;
+  /* font-family: "Oswald", sans-serif; */
+}
+.card-details-container{
+  width: 100%;
+   height: 100px;
+    display: flex;
+    padding-top: 20px;
+}
+.card-key{
+  font-weight: 600;
+  color: #000000b4;
+}
+.card-right-side{
+  width: 35%;
+   background-color: #fff;
+    height: 100%;
+}
+.card-left-side{
+  width: 65%;
+    height: 100%;
+     overflow-x: hidden;
+}
+.location-box{
+  overflow-x: scroll;
+}
 
+.mySlides, .mySlideOne, .mySlideTwo, .mySlideThree, .mySlideFour, .mySlideFive, .mySlideSix, .mySlideSeven, .mySlideEight{
+  display:none;
+  height: 200px; 
+  overflow: hidden;
+}
+.ImgStyle {
+  height: 100%;
+  transition: transform .2s;
+}
+.ImgStyle:hover{
+  transform: scale(1.5);
+}
+.w3-button{
+  background-color:#00000065 !important;
+  border-radius: 100%;
+  outline: none !important;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.w3-button:hover{
+  background-color: #f07c009a !important;
+}
+.row {
+display: flex;
+/* flex-wrap: nowrap; */
+}
+
+.SpecialCard {
+flex: 0 0 32.33%; /* Each card takes exactly 33.33% of the row width */
+max-width: 32.33%; /* Prevent any overflow caused by padding/margin */
+box-sizing: border-box;
+}
 /* Base */
 body {
   line-height: 1.7;
@@ -190,7 +237,7 @@ letter-spacing: 0.5px;
   flex: 0 1 22%; /* Each card will take roughly 22% of the container width */
   box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
   background-color: #fff;
-  height: 90px;
+  height: 120px;
   margin-bottom: 20px;
 }
 .cards:hover{
@@ -252,9 +299,20 @@ letter-spacing: 0.5px;
   width: 100px;
   padding-right:10px;
   color: #1D1254;
+  font-size: small !important;
   padding-top: 20px;
-  font-weight: 400 !important;
+  font-weight: 700 !important;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.end-to-end-assistance {
+  position: fixed; /* Change from absolute to fixed */
+  top: 63%; /* Adjust the top value to where you want the component to appear */
+  width: 100%; /* Ensures it spans the full width if needed */
+  z-index: 1000; /* Ensures it stays on top of other content */
+  background: transparent; /* Optional: adds a background color */
+  padding: 10px 0; /* Optional: adds some padding to the section */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds shadow for better visibility */
 }
 .service {
   margin: 0 15px;
@@ -265,9 +323,10 @@ letter-spacing: 0.5px;
 .icon {
   width: 80px;
   height: 80px;
-  border: 2px solid #1d12541a;
+  border: 2px solid #1d125457;
   border-radius: 50%;
   background-size: cover;
+  background-color: #ffffffab;
 }
 .icon:hover{
   background-color: #f07c00e3;
@@ -1340,16 +1399,17 @@ outline:none ;
 }
 .site-blocks-cover h1 {
   font-weight: 900;
-  color: #fff;
+  color: #1D1253 !important;
   font-size: 4rem;
-  font-weight: normal;
+  font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 .site-blocks-cover p {
-  color: #fff;
+  color: #1D1253;
   font-size: 1.5rem;
   line-height: 1.5;
+  font-weight: 700 !important;
 }
 .site-blocks-cover .intro-text {
   font-size: 16px;
@@ -2659,13 +2719,15 @@ outline:none ;
   transition: 0.3s all ease-in-out;
   position: absolute;
   bottom: 0;
+ 
 }
+
 .unit-9 h2 {
   padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   color: #fff;
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-bottom: 0;
 }
 .unit-9 span {
@@ -2836,7 +2898,7 @@ outline:none ;
 
 .social-icon:hover {
   color: #eec60a !important;
-  background: #ddb795;
+  background: #1D1253;
 }
 
 .podcast-entry {

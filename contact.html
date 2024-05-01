@@ -178,7 +178,7 @@
 
 
             </p>
-            <p><a href="#" class="btn btn-primary  py-2 px-4">Learn More</a></p>
+            <!-- <p><a href="#" class="btn btn-primary  py-2 px-4">Learn More</a></p> -->
           </div>
         </div>
       </div>
@@ -189,7 +189,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+          <img src="images/sub-banners/our-office.jpg" alt="Image" class="img-fluid">
         </div>
         <div class="col-lg-6">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
@@ -212,6 +212,10 @@
           <h2 class="mb-5">What Clients Say About Us</h2>
           <p>"Our customers love PropKaart.in for our dedication, transparency, and personalized service. Discover why homeowners trust us to guide them through their real estate journey with confidence and satisfaction."</p>
         </div>
+      </div>
+      <div class="custom-nav">
+        <button class="owl-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="arrow-buttons"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></button>
+        <button class="owl-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="arrow-buttons"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></button>
       </div>
       <div class="nonloop-block-13 owl-carousel">
         
@@ -272,7 +276,7 @@
         <div class="row">
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
+          <a href="https://www.instagram.com/invites/contact/?i=14cydk8mo0o2e&utm_content=tpeo7e6" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
@@ -388,6 +392,35 @@
   <script src="js/circleaudioplayer.js"></script>
 
   <script src="js/main.js"></script>
-    
+  <script>
+    // Prev & Next Button
+
+$(document).ready(function(){
+  $(".nonloop-block-13").owlCarousel({
+    loop: false,
+    margin: 10,
+    nav: false,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:3
+      },
+      1000:{
+        items:5
+      }
+    }
+  });
+
+  // Navigation Buttons
+  $(".custom-nav .owl-prev").click(function(){
+    $(".nonloop-block-13").trigger("prev.owl.carousel");
+  });
+  $(".custom-nav .owl-next").click(function(){
+    $(".nonloop-block-13").trigger("next.owl.carousel");
+  });
+});
+  </script>
   </body>
 </html>
