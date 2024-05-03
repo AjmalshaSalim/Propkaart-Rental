@@ -93,7 +93,7 @@ width: 20px;
   outline: none;
 }
 .card-fields{
- font-weight: 800;
+ font-weight: 600;
   color: #1D1253;
   font-size: small;
 line-height: 14px;
@@ -633,9 +633,14 @@ h6 {
   font-family: "Oswald", sans-serif;
 }
 p{
-  color: #1D1253;
+  color: #281a6e;
 }
-
+.font-italic{
+  color: #F07A00 !important;
+}
+.special-font{
+  font-weight: 700;
+}
 a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
